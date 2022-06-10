@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pricing</title>
+</head>
+<body><style>
+    .pricetable{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 25px;
+        padding-left: auto;
+        padding-right: auto;
+        justify-content: center;
+        font-family: "public sans";
+    }
+    .card1,.card2,.card3{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+       
+        max-width: 350px;
+        min-width: 250px;
+        flex-basis: 33.33%;
+        text-align: center;
+        align-items: center;
+        padding: 18px;
+        border-radius: 10px;
+    } 
+    .aa{
+        font-family: "public sans";
+       
+    }
+    .price{
+        display: flex;
+        flex-direction: row;
+    }
+    .a1,.a2,.a3{
+        font-size:small; font-family:"public sans";
+        font-weight: 600;color: #637381;
+    }
+    @font-face{font-family:'Public Sans';
+    font-style:normal;
+    font-display:swap;
+    src:url(https://fonts.gstatic.com/s/publicsans/v13/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpm5wA.woff)
+     format('woff')}
+     
+     
+     
+     
+
+
+@media (max-width: 600px)
+{.card1,.card2,.card3 {
+    flex-basis: 100%;
+    flex-grow: 0;
+    max-width: 400px;
+    margin: auto;
+}}
+</style>
+    <div class="aa"style="text-align: center;">
+    <h1 >Flexible plans for your</br>
+        community's size and needs</h1>
+        <p style=" color: #637381;">Choose your plan and make modern online conversation magic</p></div>
+        <div class="pricetable">
+            <div class="card1">
+                <p  class="a1">BASIC</p>
+                <h1 style="font-size:2.8em ;font-weight:900;">Free</h1>
+                <P style="color:green; margin:0;font-weight: 400;font-size:small;">Forever</P>
+                <img src="img1.png" style="width: 80px; margin: 15px;">
+            <ul style="text-align: left;">
+                <li style="padding:5px ;">3 prototypes</li>
+                <li style="padding:5px ;">3 boards</li>
+                <li style="color: grey;padding:5px ;">Up to 5 team members</li>
+                <li  style="color: grey;padding:5px ;">Advanced security</li>
+                <li  style="color: grey;padding:5px ;">Permissions & workflows</li>
+            </ul>
+            <button style="width:100%; padding:15px;margin:10px;border-radius:5px;max-width: 250px;border:none;color:grey;font-weight: 700;">Current Plan</button>
+            </div>
+            <div class="card2"> <p class="a2">STARTER</p><div class="price">
+                <h5 style="line-height: 4.5;color: grey;">$</h5>
+                <h2 style="font-size:2.8em ;font-weight:900;"> 4.99</h2>
+                    <h5 style="    text-align: end;
+                    align-self: flex-end;
+                    line-height: 4.5;color: grey;"> /mo</h5></div>
+                <P style="color:green; margin:0;font-weight: 400;font-size:small;">Saving $24 A Year</P>
+                <img src="img2.png" style="width: 80px; margin: 15px;">
+            <ul style="text-align: left;">
+                <li style="padding:5px ;">3 prototypes</li>
+                <li style="padding:5px ;">3 boards</li>
+                <li style="padding:5px ;">Up to 5 team members</li>
+                <li  style="color: grey;padding:5px ;">Advanced security</li>
+                <li  style="color: grey;padding:5px ;">Permissions & workflows</li>
+            </ul>
+            <button style="width:100%; padding:15px;margin:10px;border-radius:5px;max-width: 250px;border:none;color:white;font-weight: 700;background-color: #01aa55;">Choose Starter</button></div>
+            <div class="card3"> <p class="a3">PREMIUM</p>
+                <div class="price">
+                <h5 style="line-height: 4.5;color: grey;">$ </h5>
+                <h2 style="font-size:2.8em ;font-weight:900;"> 9.99</h2>
+                    <h5 style="    text-align: end;
+                    align-self: flex-end;
+                    line-height: 4.5;color: grey;"> /mo</h5></div>
+                
+                <P style="color:green; margin:0;font-weight: 400;font-size:small;">Saving $124 A Year</P>
+                <img src="img3.png" style="width: 80px; margin: 15px;">
+            <ul style="text-align: left;">
+                <li style="padding:5px ;">3 prototypes</li>
+                <li style="padding:5px ;">3 boards</li>
+                <li style="padding:5px ;">Up to 5 team members</li>
+                <li style="padding:5px ;" >Advanced security</li>
+                <li    style="padding:5px ;"     >Permissions & workflows</li>
+            </ul>
+            <button style="width:100%; padding:15px;margin:10px;border-radius:5px;max-width: 250px;border:none;color:white;font-weight: 700;background-color: #01aa55;">Choose Premium</button></div>
+        </div>
+</body>
+</html>

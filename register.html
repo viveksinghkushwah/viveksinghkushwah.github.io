@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html><head></head>
+<body>
+    <style>
+      .parent {
+          display: flex;
+      }
+      .col1{
+          height:680px;
+          width: 34%;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          padding: 10px;
+          margin: 10px;
+          display: flex;
+          flex-direction: column;
+          border-radius: 3%;
+          align-items: center;
+          justify-content: center;
+
+      }
+      .image1{
+          
+          max-width:100%;
+      }
+      .welcome{
+        font-family: "Public Sans",sans-serif;
+
+          }    
+          .col2{
+        
+        width: 66%;
+       
+        align-items: center;
+    }
+    .image1{
+        
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .inner{
+        max-width: 480px;
+    margin: auto;
+      
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    }
+    .signin{
+        float: left ;
+        font-family: "Public Sans",sans-serif;
+    }
+    .alpha{
+        display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 40px;
+    font-family: "Public Sans",sans-serif;
+}
+.useemail{
+    padding: 10px 0;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    font-family: Public Sans,sans-serif;
+    font-weight: 400;
+    background-color: rgb(241, 249, 255);
+    border-radius: 10px ;
+    padding: 16px 16px;
+    color: rgb(46, 80, 102);
+    color: #04297A;
+    background-color: #D0F2FF;
+    margin-bottom: 24px;
+}
+    .form1{
+        display: flex;
+    flex-direction: column;
+    column-gap: 15px;
+    }
+    .text1,.text2,.text3,.text4{
+        font: inherit;
+    letter-spacing: inherit;
+    color: currentColor;
+    padding: 4px 0 5px;
+    border-radius: 6px;
+    border: 0;
+    box-sizing: content-box;
+    
+    height: 2.5em;
+    margin: 0;
+   
+    
+    min-width: 0;
+    width: 100%;
+    }
+    .input1,.input2,.input3,.input4{
+        border: rgba(182, 177, 177, 0.897) 1px solid;
+       margin:  15px 0px 15px 0px;
+       border-radius: 6px;
+       font-family: "Public Sans",sans-serif;
+       font-weight: 450;
+       
+    }
+    .input3,.input4{
+        width: 100%;
+    }
+    
+    .remrmber{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    }
+    .btn{
+        color: #fff;
+    background-color: #00AB55;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    border-color: inherit;
+    font-weight: 900;
+    line-height: 1.7;
+    font-size: 0.9375rem;
+    font-family: "Public Sans",sans-serif;
+    min-width: 64px;
+    margin-top: 15px;
+    padding: 8px 22px;
+    border-radius: 8px;
+width:100%;}
+    .welcome{
+        display: flex;
+        margin: 80px 0px 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size:2em;
+    font-family: "Public Sans", sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    float: left;
+    }
+   
+
+    .register{
+
+         display: flex;
+         justify-content: end;
+         font-family: "Public Sans", sans-serif;
+         color: #637381;
+        font-weight: 400;
+        font-size:small;
+
+}
+    
+    .name{
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+
+    }
+    .free{
+        line-height: 1em; 
+        margin:0px;
+        color: #637381;
+        font-weight: 400;
+        font-style:"Public Sans",sans-serif;
+    }
+    .mini{
+        line-height: 1em; 
+        margin-top: 15px;
+        color: #637381;
+        font-weight: 400;
+        text-align: center;
+        font-style:"Public Sans",sans-serif;
+    }
+    .form-container {
+        width: 100%;
+       
+        
+    }
+    input[type=text]:focus{
+    border: none;
+  outline:2px solid #00AB55;     /* oranges! yey */
+}
+    
+    .form-row {
+        position: relative;
+        margin: 20px 0 20px 0;
+        width: 100%;
+    }
+    
+    .form-label {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: #999;
+        cursor: text;
+        transition: all .15s ease-in-out 0s;  font-family: "Public Sans", sans-serif;
+    }
+    .form-text{
+        border: 1PX solid rgb(209, 209, 209);
+        border-radius: 5PX;
+       
+}
+
+
+
+    .form-text:hover{
+        border-color: black ;
+    }
+    .form-text:active{
+        box-shadow: none;
+        border-color: #00AB55;
+    }
+input:focus{
+    border-color: #00AB55;
+}
+
+    .form-text{
+        width: 100%;
+        max-width:438px;
+        padding: 20px;
+    }
+    
+  
+    .form-text:focus ~ .form-label {
+        top: -0.5em;
+        left: 20px;
+        font-size: .8em;
+        color:#00AB55;
+        cursor: pointer;
+        background-color:white;
+        padding: 0 5px 0 5px;  font-family: "Public Sans", sans-serif;
+    }
+   
+   
+    .form-col{
+       
+       width:40%;
+       position: relative;
+      
+    
+   }
+   .form-row1{
+       display:flex;
+       flex-direction:row;
+       gap: 50px;
+      
+       width: 100%;
+
+       }
+    @font-face{font-family:'Public Sans';
+    font-style:normal;
+    font-display:swap;
+    src:url(https://fonts.gstatic.com/s/publicsans/v13/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpm5wA.woff)
+     format('woff')}
+     @media only screen and (max-width:800px) {
+	.col1{display:none;
+	}
+    .col2{
+        justify-content: center;
+    margin: auto;
+    }
+    .form-container {
+    width: 100%;
+    margin: auto;
+}
+.form-row1{
+     
+      max-width: 440px;
+      
+
+       }
+.form-col{
+        width: -webkit-fill-available ;
+}
+.col2{
+    min-width: 600px;}
+}
+
+    </style>
+    <div class="parent">
+    <div class="col1">
+        <div><h1 class="welcome">Manage the job more effectively with Minimal</h1></div>
+        <div class="img1"><img class="image1" src="illustration_register.png">
+    </div></div>
+    
+    
+    <div class="col2">
+    
+        <h5 class="register">Already have an account?<a href="test - Copy.html"> Login</a>  </h5>
+        <div class="inner">
+            <div class="alpha">
+            <h2 class="signin">Get started absolutely free.</h2>
+            <p class="free">Free forever. No credit card needed.
+
+            </p>
+            </div>
+            
+            <form onsubmit="" class="form-container">
+                <div class="form-row1">
+                    <div class="form-col">
+                        <input type="text" class="form-text" id="form-fname" placeholder="">
+                        <label for="form-fname" class="form-label"> First name </label>
+                    </div>
+                    <div class="form-col">
+                        <input type="text" class="form-text" id="form-lname" placeholder="">
+                        <label for="form-lname" class="form-label"> Last name </label>
+                     </div>
+                    </div>
+                <div class="form-row">
+                    <input type="text" class="form-text" id="form-email" placeholder="">
+                    <label for="form-email" class="form-label"> Email address </label>
+                </div>
+                <div class="form-row"> 
+                    <input type="text" class="form-text" id="form-pass" placeholder="">
+                    <label for="form-pass" class="form-label"> Password </label>
+                </div>
+
+               
+                <button type="submit" class="btn">Register</button>
+                <p class="mini">By registering, I agree to Minimal <a href="">Terms of Service</a> and <a>Privacy Policy.</a></p>
+        </form>
+                   
+
+                
+        </div>
+
+        
+    </div> 
+    </div> 
+    </div>
+
+</div>
+    
+</div>
+</body>
+</html>

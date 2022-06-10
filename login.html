@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html><head></head>
+<body>
+    <style>
+      .parent {
+          display: flex;
+          flex-direction: row;
+      }
+      .col1{
+          height:680px;
+          width: 34%;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          padding: 10px;
+          margin: 10px;
+          display: flex;
+          flex-direction: column;
+          border-radius: 3%;
+          align-items: center;
+          justify-content: center;
+      }
+     
+    .col2{
+        
+        width: 66%;
+       
+        align-items: center;
+        font-family: "Public Sans",sans-serif;
+        
+    }
+    .image1{
+        
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .inner{
+        max-width: 480px;
+    margin: auto;
+      
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    }
+    .signin{
+        float: left ;
+        font-family: "Public Sans",sans-serif;
+    
+    }
+    .alpha{
+        display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 40px;
+}
+.useemail{
+    padding: 10px 0;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    font-family: "Public Sans",sans-serif;
+    font-weight: 400;
+    background-color: rgb(241, 249, 255);
+    border-radius: 10px ;
+    padding: 16px 16px;
+    color: rgb(46, 80, 102);
+    color: #04297A;
+    background-color: #D0F2FF;
+    
+}
+    .form1{
+        display: flex;
+    flex-direction: column;
+    column-gap: 15px;
+    }
+    
+    
+    .remrmber{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size:5px;
+    font-family: "Public Sans",sans-serif;
+    }
+    .btn{
+        color: #fff;
+    background-color: #00AB55;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    border-color: inherit;
+    font-weight: 700;
+    line-height: 1.7;
+    font-size: 0.9375rem;
+    font-family: "Public Sans",sans-serif;
+    min-width: 64px;
+    margin-top: 15px;
+    padding: 8px 22px;
+    border-radius: 8px;
+    width: 100%;
+}
+    .welcome{
+        display: flex;
+        margin: 80px 0px 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.85rem;
+    font-family: "Public Sans",sans-serif;
+    
+    
+    padding-left: 40px;
+    padding-right: 40px;
+    float: left;
+    }
+    .form-container {
+        width: 100%;
+       
+        
+    }
+    input[type=text]:focus{
+    border: none;
+  outline:2px solid #00AB55;     /* oranges! yey */
+}
+    
+    .form-row {
+        position: relative;
+        margin: 20px 0 20px 0;
+        width: 100%;
+    }
+    
+    .form-label {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: #999;
+        cursor: text;
+        transition: all .15s ease-in-out 0s;  font-family: "Public Sans", sans-serif;
+    }
+    .form-text{
+        border: 1PX solid rgb(209, 209, 209);
+        border-radius: 5PX;
+}
+    .form-text:hover{
+        border-color: black ;
+    }
+    .form-text:active{
+        box-shadow: none;
+        border-color: #00AB55;
+    }
+input:focus{
+    border-color: #00AB55;
+}
+
+    .form-text{
+        width: -webkit-fill-available;
+
+        max-width:438px;
+        padding: 20px;
+    }
+    
+  
+    .form-text:focus ~ .form-label {
+        top: -0.5em;
+        left: 20px;
+        font-size: .8em;
+        color:#00AB55;
+        cursor: pointer;
+        background-color:white;
+        padding: 0 5px 0 5px;  font-family: "Public Sans", sans-serif;
+    }
+    @media only screen and (max-width:800px) {
+	.col1{display:none;
+	}
+    .col2{
+        justify-content: center;
+    margin: auto;
+    }
+    .form-container {
+    width: 100%;
+}
+}
+
+
+
+
+    @font-face{font-family:'Public Sans';
+    font-style:normal;
+    font-display:swap;
+    src:url(https://fonts.gstatic.com/s/publicsans/v13/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpm5wA.woff)
+     format('woff')}
+    .register{
+
+         display: flex;
+         justify-content: end;
+         font-family: "Public Sans",sans-serif;
+         color: gray;
+         font-weight: 400;
+        font-size: 12px;
+    }
+    </style>
+    <div class="parent">
+    <div class="col1">
+        <div><h1 class="welcome">Hi, Welcome Back</h1></div>
+        <div class="img1"><img class="image1" src="illustration_login.png">
+    </div></div>
+    
+    
+    <div class="col2"><h4 class="register" >Don't have an account?<a href="register.html" style="color: green;">Get started</a> </h4>
+        <div class="inner">
+            <div class="alpha">
+            <h2 class="signin">Sign in to Minimal</h2>
+            <p style="line-height: 1em; margin:0px;color: #637381;font-weight: 400; font-family:Public Sans,sans-serif;">
+            Enter your details below.</p>
+            </div>
+            <div class="useemail">Use email : <strong>demo@minimals.cc</strong> / password :<strong> demo1234</strong>
+            </div>
+            <form onsubmit="" class="form-container">
+            
+                    <div class="form-row">
+                        <input type="text" class="form-text" id="form-email" placeholder="">
+                        <label for="form-email" class="form-label"> Email address </label>
+                    </div>
+                    <div class="form-row"> 
+                        <input type="text" class="form-text" id="form-pass" placeholder="">
+                        <label for="form-pass" class="form-label"> Password </label>
+                    </div>
+
+                    <div class="remember"><label for="" style="font-weight:450;font-size:15px; font-family: Public Sans; color: grey;" ><input type="checkbox" name="" id="" style="">
+                        Remember me</label> 
+                    <a href="" style="color: #00AB55; font-weight:650;font-size:15px; font-family: Public Sans;float: right;">Forgot password?</a></div>
+                    <button type="submit" class="btn">Login</button>
+            
+            </form>
+        </div>
+
+        
+    </div> 
+    </div> 
+    </div>
+
+</div>
+    
+</div>
+</body>
+</html>
