@@ -8,9 +8,14 @@
     <style>
       .parent {
           display: flex;
+          display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
       }
       .col1{
-          height:680px;
+         
           width: 34%;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           padding: 10px;
@@ -20,6 +25,7 @@
           border-radius: 3%;
           align-items: center;
           justify-content: center;
+          box-sizing: border-box;
 
       }
       .image1{
@@ -81,22 +87,7 @@
     flex-direction: column;
     column-gap: 15px;
     }
-    .text1,.text2,.text3,.text4{
-        font: inherit;
-    letter-spacing: inherit;
-    color: currentColor;
-    padding: 4px 0 5px;
-    border-radius: 6px;
-    border: 0;
-    box-sizing: content-box;
     
-    height: 2.5em;
-    margin: 0;
-   
-    
-    min-width: 0;
-    width: 100%;
-    }
     .input1,.input2,.input3,.input4{
         border: rgba(182, 177, 177, 0.897) 1px solid;
        margin:  15px 0px 15px 0px;
@@ -242,7 +233,7 @@ input:focus{
    
     .form-col{
        
-       width:40%;
+    
        position: relative;
       
     
@@ -251,7 +242,7 @@ input:focus{
        display:flex;
        flex-direction:row;
        gap: 3.5rem;
-      
+      flex-wrap: wrap;
        width: 100%;
 
        }
@@ -276,7 +267,7 @@ input:focus{
 .form-row1{
      
       max-width: 440px;
-      
+      gap: 15px;
 
        }
 .form-col{
@@ -284,7 +275,9 @@ input:focus{
 }
 
 }
-
+.form-text{
+    width: -webkit-fill-available ;
+}
     </style>
     <div class="parent">
     <div class="col1">
