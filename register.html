@@ -7,12 +7,13 @@
 <body>
     <style>
       .parent {
-          display: flex;
-          display: flex;
-    height: 100%;
+        display: flex;
+    flex-direction: row;
+    
+    height: 90vh;
     justify-content: center;
     align-items: center;
-    justify-items: center;
+
       }
       .col1{
          
@@ -26,6 +27,8 @@
           align-items: center;
           justify-content: center;
           box-sizing: border-box;
+          max-width: 470px;
+          height: 80vh;
 
       }
       .image1{
@@ -278,8 +281,10 @@ input:focus{
 .form-text{
     width: -webkit-fill-available ;
 }
-    </style>
+    </style> <h5 class="register">Already have an account?<a href="login.html"> Login</a>  </h5>
+       
     <div class="parent">
+        
     <div class="col1">
         <div><h1 class="welcome">Manage the job more effectively with Minimal</h1></div>
         <div class="img1"><img class="image1" src="illustration_register.png">
@@ -288,7 +293,6 @@ input:focus{
     
     <div class="col2">
     
-        <h5 class="register">Already have an account?<a href="login.html"> Login</a>  </h5>
         <div class="inner">
             <div class="alpha">
             <h2 class="signin">Get started absolutely free.</h2>
